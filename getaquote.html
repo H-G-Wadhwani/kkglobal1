@@ -21,7 +21,25 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <style>
+        .select {
+	width:200px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.select-holder {
+	display:inline-block;
+	position:relative;
+	width:200px;
+	height:1.5em;
+	background:#f9f9f9;
+}
+p {
+	margin:0 0 1em;
+}
+    </style>
+   
 </head>
 
 <body>
@@ -282,7 +300,8 @@
                                         </div>
                                         <div class="col-12">                                           
                                             <div class="form-group">
-                                                <select id="country" name="country"  required><br>
+                                                <span class="select-holder">
+                                                <select id="country" class="select" onmousedown="if(this.options.length>6){this.size=6;}"  onchange='this.size=0;' onblur="this.size=0;"  name="select1" required><br><br>
                                                     <option value="" selected >Country</option>
                                                     <option value="Afghanistan">Afghanistan</option>
                                                     <option value="Albania">Albania</option>
@@ -542,6 +561,7 @@
                                                     <option value="Zambia">Zambia</option>
                                                     <option value="Zimbabwe">Zimbabwe</option>
                                                 </select>
+                                            </span>
                                             </div>
                                         </div>
                                         <br><br><br>
@@ -603,7 +623,7 @@
                                         </div>
                                         <div class="col-12">                                           
                                             <div class="form-group">
-                                                <select id="country" name="country"  required><br>
+                                                <select class="select" id="country" name="country" required><br>
                                                     <option value="" selected >Country</option>
                                                     <option value="Afghanistan">Afghanistan</option>
                                                     <option value="Albania">Albania</option>

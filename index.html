@@ -21,6 +21,26 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .vertical-menu {
+          width: 200px;
+        }
+        
+        .vertical-menu a {
+          
+          display: block;
+          /* padding: 12px; */
+          text-decoration: none;
+        }
+        
+        .vertical-menu a:hover {
+          
+        }
+        
+        .vertical-menu a.active {
+          
+        }
+        </style>
 </head>
 <body>
 <!--? Preloader Start -->
@@ -65,7 +85,7 @@
                 <div class="container" style="margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;">
                     <div class="row">
                         <!-- Logo -->
-                        <div class="col-2">
+                        <div class="col-2 ali">
                             <div class="logo">
                                 <a href="index.html"><img src="assets/img/logo_new.png" alt=""style="width: 150px;"></a>
                             </div>
@@ -76,19 +96,18 @@
                                 <a href="index.html"><img src="assets/img/logo_new_written.png" alt="" style="width:900px;"></a><!--style="width: 320px;"-->
                             <!-- </div> -->
                         </div>
-                    </div>
-                    <div class="row justify-content-end" style="grid-template-rows: 100px;" >
+                    
                         
-                        <div class="col align-self-end" style="margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;"> 
+                        <div class="col align-self-end " style="margin-right: 0px; margin-left: 0px; padding-left: 0px; padding-right: 0px;"> 
                             <div class="menu-wrapper  d-flex align-items-end justify-content-end">
-                                
-                                <div class="main-menu d-none d-lg-block">
+                                <div class="vertical-menu">
+                                <div class="main-menu d-none d-lg-block" style="padding: 0px 0px 0px 0px;">
                                     <nav> 
                                         <ul id="navigation">                                                                                          
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="services.html">Services</a>
-                                                <ul class="submenu">
+                                                <ul class="submenu" >
                                                     <li><a href="airfreight.html">Air Freight</a></li>
                                                     <li><a href="seafreight.html">Sea Freight</a></li>
                                                     <li><a href="customclearance.html">Custom Clearance</a></li>
@@ -102,13 +121,15 @@
                                             <li><a href="careers.html">Careers</a>
                                             
                                             <li><a href="contact.html">Contact</a></li>
+                                            <!-- <div class="header-right-btn d-none d-lg-block ml-20"> -->
+                                             <li><a href="getaquote.html" class="btn header-btn">Get A Qoute</a></li>
+                                            <!-- </div> -->
                                         </ul>
+                                        
                                     </nav>
                                 </div>
                                 
-                                <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a href="getaquote.html" class="btn header-btn">Get A Qoute</a>
-                                </div>
+                            </div>
                             </div>
                         </div> 
                         <!-- Mobile Menu -->

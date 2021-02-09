@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
 
     <!-- CSS here -->
@@ -42,9 +43,13 @@
         .vertical-menu a.active {
           
         }
+
+        .mySlides {display:none;}
+
+
         </style>
 </head>
-<body> <!--style="background-color:orangered;"-->
+<body style="background-color: rgb(201, 205, 211);"> <!--style="background-color:orangered;"-->
 <!--? Preloader Start -->
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
@@ -150,9 +155,11 @@
         <!-- <div class="slider-active"> -->
             
             <!-- <div class="single-slider slider-height d-flex align-items-center"> -->
+            <!-- <div class="slider_images">
                 <div class="container" style="padding-left: 0px; padding-right: 0px;">
+                    
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
+                        
                         <ol class="carousel-indicators">
                           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -185,23 +192,30 @@
                             <span class="sr-only">Next</span>
                           </a>
                     
-                    </div>
-                    <!-- <div class="row">
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="hero__caption">
-                                <h1 >Safe & Reliable <span>Logistic</span> Solutions!</h1>
-                            </div>
-                            
-                            <Hero Pera>
-                           
-                        </div>
-                    </div> -->
+                    </div>                    
                 </div>
+            </div> -->
             <!-- </div> -->
         <!-- </div> -->
     <!-- </div> -->
-    
-    <div class="categories-area section-padding30">
+    <div class="slider-area ">
+        <div class="slider-active">
+            <!-- <div class="single-slider slider-height d-flex align-items-center"> -->
+                <div class="container" style="padding-left: 0px; padding-right: 0px;">
+        <!-- <div class="w3-content w3-section"> -->
+            <img class="mySlides w3-animate-right" src="assets/img/airfreight.jpg"  alt="airfreight" style="height: 500px; width: max-content;">
+            <img class="mySlides w3-animate-right" src="assets/img/seafreight.jpg"  alt="seafreight" style="height: 500px; width: max-content;">
+            <img class="mySlides w3-animate-right" src="assets/img/transportation.jpg"  alt="transportation" style="height: 500px; width: max-content;">
+            <img class="mySlides w3-animate-right" src="assets/img/customclearance.jpg"  alt="customclearance" style="height: 500px; width: max-content;">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="categories-area section-padding30">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -456,12 +470,29 @@
     </div>
     <!-- Footer End-->
 </footer>
+
 <!-- Scroll Up -->
 <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
 
     <!-- JS here -->
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>

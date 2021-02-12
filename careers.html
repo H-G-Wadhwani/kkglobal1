@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -42,6 +43,19 @@
             .vertical-menu a.active {
               
             } */
+
+            input[type="file"] {
+                position: fixed;
+                right: 100%;
+                bottom: 100%;
+            }
+            .custom-file-upload {
+                border: 2px solid #1c165c;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+            }
+
             </style>
     </head>
     <body style="background-color: rgb(201, 205, 211);">
@@ -199,8 +213,12 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <label for="resume"><b>Upload your CV :</b></label>
-                                        <input type="file" id="resume" name="resume" placeholder="Your CV/Resume" required style="border: 1px solid #1c165c;">
+                                        <!-- <label for="resume"><b>Upload your CV :</b></label>
+                                        <input type="file" id="resume" name="resume" placeholder="Your CV/Resume" required style="border: 1px solid #1c165c;"> -->
+                                        <label for="file-upload" class="custom-file-upload" style="width: 362px; height: 44px;">
+                                            <i class="fa fa-file-upload" aria-hidden="true" style="font-size:48px;color:red"></i> Upload Your CV
+                                        </label>
+                                        <input id="file-upload" type="file"/>
                                     </div>
                                 </div>
                             </div>

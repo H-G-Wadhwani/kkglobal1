@@ -44,17 +44,25 @@
               
             } */
 
-            input[type="file"] {
-                position: fixed;
-                right: 100%;
-                bottom: 100%;
-            }
-            .custom-file-upload {
-                border: 2px solid #1c165c;
-                display: inline-block;
-                padding: 6px 12px;
-                cursor: pointer;
-            }
+            .container { 
+            display: table; 
+            width: 100% 
+        } 
+          
+        label { 
+            display: table-cell; 
+            width: 1px; 
+            white-space: nowrap; 
+        } 
+          
+        span { 
+            display: table-cell; 
+            padding: 0 4px 0 6px; 
+        } 
+          
+        input { 
+            width: 70%; 
+        }
 
             </style>
     </head>
@@ -213,12 +221,14 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <!-- <label for="resume"><b>Upload your CV :</b></label>
-                                        <input type="file" id="resume" name="resume" placeholder="Your CV/Resume" required style="border: 1px solid #1c165c;"> -->
-                                        <label for="file-upload" class="custom-file-upload" style="width: 362px; height: 44px;">
+                                        <div class="container">
+                                            <i class="fa fa-file-upload"></i><label for="resume"><h2><b>Upload your CV :</b></h2></label>
+                                        <span><input type="file" id="resume" name="resume" placeholder="Your CV/Resume" required ></span>
+                                    </div>
+                                        <!-- <label for="file-upload" class="custom-file-upload">
                                             <i class="fa fa-file-upload" aria-hidden="true" style="color:red"></i> Upload Your CV
                                         </label>
-                                        <input id="file-upload" type="file"/>
+                                        <input id="file-upload" type="file" name="resume" placeholder="Your CV/Resume" required style="border: 1px solid #1c165c;"/> -->
                                     </div>
                                 </div>
                             </div>
